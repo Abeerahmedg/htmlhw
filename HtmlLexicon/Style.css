@@ -1,0 +1,168 @@
+* {
+    margin: 0px auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(69, 62, 62);
+   
+
+    }
+    html{
+        height: 100%;
+        width: 100%;
+        max-width: 1024px;
+    }
+     a:link { text-decoration: none; }
+     a:visited { text-decoration: none; }
+     a:hover { text-decoration: underline; }
+     a:active { text-decoration: underline; }
+
+    body {
+     background-color: #5a5d59;
+     grid-template: auto auto 60px / repeat(3, 1fr);
+    justify-content: center;
+    width: 100%;
+    max-width: 1024px;
+    }
+    body > header {
+    align-items: center;
+    background-color:#9a989fc6;
+    width: 100%;
+    padding: 10px 0;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    display: flex;
+    flex-wrap: wrap;
+    border-width: 0cm;
+    }
+
+
+    body > header > h1{
+        margin: 10px;
+    }
+    body > header > ol{
+        display: flex;
+        list-style: none;
+        flex: auto;
+        flex-wrap: wrap;
+       
+    
+    }
+    body > header > ol > li{
+        margin: 0px 10px;
+        grid-column-gap: 10px;
+       
+    }
+    body > header > p{
+        display: flex;
+        margin-left: 120px;
+        
+       
+        
+    }
+    body > main{
+        display: flex;
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        border-width: 0;
+        border-color: #868491;
+        background-color: #d0d1df;
+        width: auto;
+        align-items: center;
+    }
+   
+    body > main> h2{
+        font-size: medium;
+    
+    
+    }
+    body > main > form {
+        grid-column: 2;
+        grid-row: 3;
+        border-width: 1px;
+        border-color: #5e6d62;
+        background-color: #d0d1df;
+        align-items: center;
+
+    }
+    body > main.Login{
+        grid-column: 1/ span 2;
+        border-width: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      
+     }
+    body > main > form > input[type = "text"]{
+        margin: 10px 10px 10px 10px;
+        border-width: 1px;
+        border-color: #5e6d62;
+       border-radius: 3px;
+       padding: 5px;
+       background-color: white; 
+    }
+    body > main > form > input[type = "password"]{
+        margin: 10px 10px 10px 10px;
+        border-width: 1px;
+        border-color: #5e6d62;
+       border-radius: 3px;
+       padding: 5px;
+       background-color: white; 
+    }
+
+    body > main > form > button[type = "reset"]{
+        margin: 10px 10px 10px 10px;
+        border-width: 1px;
+        border-color: #5e6d62;
+       border-radius: 3px;
+       padding: 5px;
+       background-color: #84848b; 
+    }
+    body > main > form > button[type = "submit"]{
+        margin: 10px 10px 10px 10px;
+        border-width: 1px;
+        border-color: #5e6d62;
+       border-radius: 3px;
+       padding: 5px;
+       background-color: #84848b;
+    }
+    body> aside {
+        grid-column: 3;
+        grid-row: 2;
+        display: table;
+        height: 70px;
+        padding: 0;
+        width: 70px;
+        justify-content: left;
+        flex-direction: column;
+        border-width: 0px 1px;
+        border-color: #5e6d62;
+        background-color: #d2d3db;
+    } 
+    body > aside > h3{
+        font-size: 1.5rem;
+        margin: 10px;
+        
+    }
+    body > aside> ul {
+        margin: 10px 10px 10px 20px;
+    }
+    body > aside > ul > li > ol{
+        margin: 10px 10px 10px 20px;
+    }
+    body> footer{
+        grid-column: 1 / span 3;
+        grid-row: 3;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-width: 1px;
+        border-color: #9a989fc6;
+        border-style: solid;
+        padding: 10px;
+        background-color: #9a989fc6;
+    }
