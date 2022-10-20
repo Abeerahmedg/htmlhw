@@ -1,0 +1,123 @@
+*{
+    font-family: 'Quicksand' , sans-serif;
+box-sizing:border-box;
+   }
+
+body{
+    margin: 20px;
+}
+.article1{
+    grid-area: article1;
+    line-height: 1.6;
+}
+.article2{
+    grid-area: article2;
+    line-height: 1.6;
+}
+.sidebar1{
+    grid-area: sidebar1;
+    line-height: 1.6;
+}
+.content{
+    grid-area: content;
+    text-align: left;
+    line-height: 1.6;
+    
+}
+.header{
+    grid-area: header;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;  
+}
+.container{
+    background-color: antiquewhite;
+    color: #444;
+    display: grid;
+    grid-gap: 1em;
+    max-width: 1024px;
+    grid-template-areas:
+    "header header header"
+    "content content sidebar1"
+    "article1 article2 sidebar1"
+    "footer footer footer"
+}
+.box{
+    background-color: #444;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 10px; 
+}
+.sidebar1{
+    background-color: rgb(207, 205, 202);
+    color: #444;
+    font-size: 15px;
+}
+.log{
+    align-items: center;
+    align-content: center;
+   }
+img{
+border-radius: 50%;  
+  padding: 5px;
+  width: 150px;
+ }
+ img:hover {
+    transform: scaleX(-1);
+  }
+ 
+  
+  h1 {
+    margin: 0 20px 10px 0;
+    text-align: center;
+    display: inline-block; 
+    font-size: 40px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    
+  }
+  .start{
+    line-height: 35px;
+    height: 40px;
+    font-size: 15px;
+    text-align:center;
+    color: white;
+    width: 90px;
+    background-color: #a69f9e;
+    float: right;
+  }
+  .header{
+    overflow: hidden;
+    background-color: #a69f9e;
+    top:10px;
+
+  }
+  .header a{
+    margin-left: 40px;
+    display: inline-block;
+    color: #eae1e0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px ;
+    text-transform: uppercase;
+  }
+  .header a:hover{
+    background: #575454;
+    color: rgb(216, 203, 203);
+  }
+ .form{
+  font-size: 20px;
+  box-sizing: border-box;
+  max-width: 1024px;
+ }
+form{
+  position: relative;
+  left: 180px;
+  padding: 10px;
+}
+form > input{
+  width: 100px;
+  height: 30px;
+}
